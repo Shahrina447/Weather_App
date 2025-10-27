@@ -88,6 +88,7 @@ const Home = () => {
               {Math.round(weatherData.main?.temp)}°C
             </div>
             <div className={styles.weatherCondition}>
+              
               {weatherData.weather?.[0]?.description?.toUpperCase()}
             </div>
           </div>
@@ -96,7 +97,7 @@ const Home = () => {
           <div className={styles.date}>{date}</div>
         </>
       ) : (
-        <div className={styles.place}>Load HO RAHA HU WAIT KRO......</div>
+        <div className={styles.place}>Load HO RAHA HU WAIT KRO</div>
       )}
     </div>
     <div>

@@ -1,87 +1,102 @@
-
-
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
   min-height: 100vh;
-  background: #f0f4f8;
+  background: #e8f0f8; 
+ 
 }
 
 .widget {
   position: relative;
-  width: 250px;
-  height: 250px;
-  background: #2b98e1;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 100px;
+  width: 300px;
+  min-height: 350px;
+  background: linear-gradient(145deg, #1e90ff, #3bb0f3);
+  border-radius: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  padding: 30px 20px;
   text-align: center;
-  color: white;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3);
 }
 
 .weatherLocation {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
 .weatherLocation input {
   flex: 1;
-  padding: 15px;
-  width:600px;
-  border-radius: 25px;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 30px;
   border: none;
   font-size: 16px;
   text-align: center;
+  outline: none;
+  background: #fff; 
+  color: #000; 
+  box-shadow: inset 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.weatherLocation input:focus {
+  box-shadow: 0 0 10px rgba(30,144,255,0.6); 
 }
 
 .weatherLocation button {
-  width: 150px;                 
-  padding: 20px ;              
-  border-radius: 20px;
+  width: 150px;
+  padding: 12px 0;
+  border-radius: 25px;
   border: none;
-  background:  #0f0c0c;
+  background: #0f0c0c;
   color: white;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 0.3s ease;
   margin-left: 0.5rem;
   cursor: pointer;
 }
 
-
-
-.weatherIcon {
-  font-size: 80px;
-  margin: 1rem 0;
+.weatherLocation button:hover {
+  background: #1c1c1c;
+  transform: scale(1.05);
 }
 
-.icon_and_weatherInfo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 1rem;
-}
 
 .temperature {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .place {
-  font-size: 28px;
-  
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .weatherCondition {
   font-size: 18px;
+  font-weight: 500;
+  color: #f0f0f0;
 }
 
 .date {
   font-size: 16px;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  color: #e0e0e0;
 }
+
+
+
