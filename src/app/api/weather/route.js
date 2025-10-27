@@ -12,11 +12,12 @@ export async function GET(request) {
 
   if (address) {
     url = `https://api.openweathermap.org/data/2.5/weather?q=${address}&appid=${API_KEY}&units=metric`;
-  } else if (latitude && longitude) {
+  } else if (latitude !== null && longitude !== null) {
     url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`;
   } else {
     return NextResponse.json({ error: "No location provided" }, { status: 400 });
   }
+  
   
   
   console.log(url);
