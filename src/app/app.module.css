@@ -9,6 +9,14 @@
  
 }
 
+.main h1 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #050505;
+  font-weight: 700;
+}
+
 .widget {
   position: relative;
   width: 300px;

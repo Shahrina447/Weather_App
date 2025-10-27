@@ -61,6 +61,10 @@ const Home = () => {
 
   return (
     <main className={styles.main}>
+  
+      <h1 classNAme ={styles.h1}>
+        Weather App
+      </h1>
     <div className={styles.widget}>
       <form
         className={styles.weatherLocation}
